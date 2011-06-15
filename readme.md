@@ -5,10 +5,10 @@
 
 # Drifting Bottle
 ##  Index
-1.0.0   Brief
-1.1.0   Functions
-1.2.0   Milestones
-1.3.0   Changes
++ 1.0.0   Brief
++ 1.1.0   Functions
++ 1.2.0   Milestones
++ 1.3.0   Changes
 
 ## 1.0.0    Brief
 + Location based notification
