@@ -13,7 +13,7 @@
 ## 1.0.0    Brief
 + Location based notification
 
-## 1.0.1    Functions
+## 1.1.0    Functions
 + Cross platform notification
 + GPS tracking
 + Instant Messaging

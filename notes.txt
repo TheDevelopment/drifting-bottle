@@ -1,0 +1,25 @@
+<Pat> 
+Transient notes of people's thoughts of stuff - 
+migrate important stuff to the reademe or elsewhere.
+
+The two main choices to be appear to be between:
+1) Native vs. Web app (vs Hybrid)
+2) Message storage
+
+Splitting each up, each have good & bad aspects, the main ones coming to mind are:
+
+#1:
+Native apps = Has to be Java (android) / Obj-C (iOs) / ...whatever windows phone / blackberry use,
+and a whole app per platform. Much nicer experience though, and more control.
+Web app = write once, easy to test, should have access to location but the huge blocker is no good push notification system.
+Hybrid = wrap a web page in a native app, do most of the work in the site but each app can provide native notifications. Less duplication, but still requires one app per platform in the required language.
+
+#2: 
+Storage via twitter API = nice stable API, location based, I'd assume all messages are posted by a single user (e.g. @messagebottle) to let us query only our tweets, and to allow posting by non twitter members. Limits to 140 characters of text, with some care needed for image/video/sounnd support.
+Storage via other API = there might be other APIs to back data storage off, e.g. Buzz does query-by-location and fusion tables also has good location and mapping support, I'm sure there are more but they'd likely have similar downsides to twitter, whose API is likely easiest.
+Custom storage = most control if we want features like better access control, custom radius limiting, ... but probably will take an infeasible amount of effort to implement and scale.
+
+My votes would be for (1) hybrid and (2) twitter in terms of a good balance for quick implementation / feature set (e.g. twitter-backed web client is a good place to start, app wrappers can be written later) - anyone else have thoughts?
+
+BTW: how do we prevent abuse? Even if we force some sort of authentication (via twitter/FB/openID/...), it feels it could be problematic if people can spam an area. Not an unsolvable problem, but it's tricky.
+
