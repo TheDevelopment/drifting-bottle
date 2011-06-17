@@ -1,3 +1,19 @@
+<Billy> 17 June 2011
+* #1: native vs web app
+hybird is definetly the way to go, without spending too much time studing each 
+devices all at once, we can start with web app for the basic prototype and 
+functions, than we look into each native apps, start from the most used device 
+to the least, which is iphone > android > blackberry/wp7 
+
+* #3: spam
+my idea of span control :
+method 1: limit time frame for random messages send per 3minutes
+method 2: allow block id/ or silent the id for the next xyz time
+method 3: problematic spams, allow report system. prioritise alert level, 
+          if greater than x users is reporting than immediately block id
+          if x users report, than alert administrator
+
+
 <Pat> 
 Transient notes of people's thoughts of stuff - 
 migrate important stuff to the reademe or elsewhere.
