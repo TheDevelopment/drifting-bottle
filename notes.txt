@@ -1,3 +1,8 @@
+<Pat>
+Project set up as per http://ruby.railstutorial.org/ruby-on-rails-tutorial-book
+to run locally:
+  $ rails server
+
 <Billy> 17 June 2011
 * #1: native vs web app
 hybird is definetly the way to go, without spending too much time studing each 
