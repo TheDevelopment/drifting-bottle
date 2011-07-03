@@ -2,11 +2,6 @@
 
 <table>
   <tr>
-    <th>Message</th>
-    <th>Author</th>
-    <th>Published</th>
-    <th>Lat</th>
-    <th>Long</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,11 +9,6 @@
 
 <% @notes.each do |note| %>
   <tr>
-    <td><%= note.message %></td>
-    <td><%= note.author_id %></td>
-    <td><%= note.published %></td>
-    <td><%= note.lat %></td>
-    <td><%= note.long %></td>
     <td><%= link_to 'Show', note %></td>
     <td><%= link_to 'Edit', edit_note_path(note) %></td>
     <td><%= link_to 'Destroy', note, :confirm => 'Are you sure?', :method => :delete %></td>
