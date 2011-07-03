@@ -1,0 +1,23 @@
+model definitions used throughout the app, passed to scaffolding:
+
+options for types = 
+:string, :text, :integer, :decimal, :float, :date, ...
+
+// Single message sent out to sea:
+model Note:
+  id:integer         // automatic DB key
+  message:string     // (short) text content
+  author_id:integer  // user id of poster
+  published:date     // timestamp of creation
+  lat:float          // location latitude
+  long:float         // location longitude
+  
+$ rails generate scaffold Note message:string author_id:integer published:date lat:float long:float
+  
+// Authenticated user within the app:
+model User:
+  id:integer         // automatic DB key
+  name:string        // display name for user
+  ... more to come (e.g. auth source FB/twitter/goog/openID/Live/...).
+  
+$ rails generate scaffold User name:string
